@@ -7,6 +7,8 @@ function showPassword() {
 
     if (typeInput === 'password') {
         password.setAttribute('type', 'text')
+    } else {
+        password.setAttribute('type', 'password')
     }
 }
 

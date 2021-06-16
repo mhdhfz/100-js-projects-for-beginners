@@ -3,13 +3,11 @@ const togglePassword = document.getElementById('togglePassword');
 
 
 function showPassword() {
-    const typeInput = password.getAttribute('type');
+    const typeInput = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', typeInput);
 
-    if (typeInput === 'password') {
-        password.setAttribute('type', 'text')
-    } else {
-        password.setAttribute('type', 'password')
-    }
+    const changeIcon = togglePassword.getAttribute('src') === 'img/eye-show.svg' ? 'img/eye-hide.svg' : 'img/eye-show.svg';
+    togglePassword.setAttribute('src', changeIcon);
 }
 
 togglePassword.addEventListener('click', showPassword);

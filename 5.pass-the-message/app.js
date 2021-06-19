@@ -4,7 +4,7 @@ const lastMessage = document.querySelector(".last-message");
 
 
 function getMessageInput() {
-    lastMessage.innerText = inputMessage.value;
+    inputMessage.value === '' ? alert('Please enter a valid message') : lastMessage.innerText = inputMessage.value;
     inputMessage.value = '';
 }
 

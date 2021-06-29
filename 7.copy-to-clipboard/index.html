@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>copy to clipboard</title>
 </head>
 <body>
     <div class="container">
-        <label for="copytoclipboard"></label>
-        <textarea id="copytoclipboard" cols="30" rows="10"></textarea>
-        <button class="copy-btn" id="copy-btn">copy</button>
+        <h1 class="title">how to copies programmatically in javascript</h1>
+        <textarea class="copy-to-clipboard" id="copytoclipboard"></textarea>
+        <button type="button" class="copy-btn" id="copy-btn">copy to clipboard</button>
+        <span class="message" id="message">copied!</span>
     </div>
+    <script src="app.js"></script>
 </body>
-</html>
+</html> 

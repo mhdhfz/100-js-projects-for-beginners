@@ -4,7 +4,7 @@ const message = document.getElementById('message');
 
 function copyToClipboard() {
 
-    if (copyToClipboardInput.value === '') {
+    if (copyToClipboardInput.value.trim() === '') {
         message.innerText = 'Please enter any value in the textbox';
         message.style.backgroundColor = '#F32013';   
     }

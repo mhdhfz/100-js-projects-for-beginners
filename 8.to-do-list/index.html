@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Yomogi&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>To Do List</title>
 </head>
 <body>
     <div class="container">
         <h1 class="title">To Do List</h1>
-        <section>
+        <section class="item-form">
             <form>
-                <input type="text" class="">
-                <button>Add Item</button>
+                <div class="item-input-group">
+                    <input type="text" id="itemInput" class="item-input">
+                    <button class="btn-item-input">Add Item</button>
+                </div>
             </form>
         </section>
         <section class="item-container">
@@ -27,14 +30,14 @@
                         <a class="edit-item">
                             <i class="far fa-edit"></i>
                         </a>
-                        <a class="delete item">
+                        <a class="delete-item">
                             <i class="far fa-times-circle"></i>
                         </a>
                     </div>
                 </div>
             </div>
-            <button class="clear-items">Clear Items</button>
         </section>
+        <button class="clear-items">Clear Items</button>
     </div>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="app.js"></script>
